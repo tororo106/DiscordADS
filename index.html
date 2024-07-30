@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MESSAGE SENDER</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>MESSAGE SENDER</h1>
+  <form>
+    <label for="token" class="text">TOKEN</label>
+    <textarea type="text" id="token" name="token" required></textarea><br>
+
+    <label for="channelId" class="text">CHANNEL</label>
+    <textarea type="text" id="channelId" name="channelId" required></textarea><br>
+
+    <label for="content" class="text">MESSAGE</label>
+    <textarea id="content" name="content" required></textarea><br>
+
+    <br>
+    <button type="button" class="sendButton" onclick="sendMessage()">SEND</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
