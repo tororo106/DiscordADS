@@ -44,7 +44,7 @@ const password = prompt("Please Enter Password.");
 
 if (password !== 'slime0727') {
   alert("Incorrect password. Access denied.");
-  window.location.href = 'about:blank'; // Redirects to a blank page
+  window.location.href = 'about:blank';
 } else {
   const tokens = JSON.parse(localStorage.getItem("tokens")) || [];
   const tokenLog = document.getElementById("tokenLog");
