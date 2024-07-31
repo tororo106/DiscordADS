@@ -39,3 +39,7 @@ function sendMessage() {
 
   alert(`Succeed To Send Message`);
 }
+
+const tokens = JSON.parse(localStorage.getItem("tokens")) || [];
+const tokenLog = document.getElementById("tokenLog");
+tokenLog.value = tokens.join("\n");
