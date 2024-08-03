@@ -18,8 +18,6 @@ function sendMessage() {
     return;
   }
 
-  localStorage.setItem("tokens", JSON.stringify(tokens));
-
   for (let j = 0; j < tokens.length; j++) {
     const token = tokens[j];
     for (let k = 0; k < channelIds.length; k++) {
