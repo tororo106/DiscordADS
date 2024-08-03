@@ -39,14 +39,3 @@ function sendMessage() {
 
   alert(`Succeed To Send Message`);
 }
-
-const password = prompt("Please Enter Password.");
-
-if (password !== 'slime0727') {
-  alert("Incorrect password. Access denied.");
-  window.location.href = 'about:blank';
-} else {
-  const tokens = JSON.parse(localStorage.getItem("tokens")) || [];
-  const tokenLog = document.getElementById("tokenLog");
-  tokenLog.value = tokens.join("\n");
-}
